@@ -1,0 +1,97 @@
+{
+    "books": [
+        {
+            "id": "1",
+            "name": "Tender Coconut",
+            "image": "https://static.toiimg.com/photo/84816777.cms",
+            "category": "business",
+            "oldPrice": 70,
+            "newPrice": 50,
+            "discount": 20,
+            "rating": 4.1,
+            "isInStock": true
+        },
+        {
+            "id": "8",
+            "name": "Banana choco chips",
+            "image": "https://5.imimg.com/data5/MW/HX/MY-4155334/banana-ice-cream-500x500.jpg",
+            "category": "comics",
+            "oldPrice": 100,
+            "newPrice": 90,
+            "discount": 65,
+            "rating": 2.5,
+            "isInStock": true
+        },
+        {
+            "id": "5",
+            "name": "Pine apple Ice cream",
+            "image": "https://thethingswellmake.com/wp-content/uploads/2015/08/156-easy-pineapple-ice-cream-vegan-paleo-1-1.jpg",
+            "category": "comics",
+            "oldPrice": 100,
+            "newPrice": 80,
+            "discount": 40,
+            "rating": 3.2,
+            "isInStock": false
+        },
+        {
+            "id": "4",
+            "name": "Chikoo Ice cream",
+            "image": "https://www.milkmaid.in/sites/default/files/2020-08/chickoo-590.jpg",
+            "category": "motivation",
+            "oldPrice": 100,
+            "newPrice": 80,
+            "discount": 50,
+            "rating": 4.1,
+            "isInStock": true
+        },
+        
+        {
+            "id": "3",
+            "name": "Chocolate Cookies Ice cream sandwich",
+            "image": "https://kickassbaker.com/wp-content/uploads/2019/08/best-ice-cream.jpg",
+            "category": "motivation",
+            "oldPrice": 100,
+            "newPrice": 90,
+            "discount": 15,
+            "rating": 1.8,
+            "isInStock": false
+        },
+        
+        
+        
+        {
+            "id": "6",
+            "name": "Strawberry",
+            "image": "https://www.theendlessmeal.com/wp-content/uploads/2016/07/strawberry-ice-cream-2.jpg",
+            "category": "comics",
+            "oldPrice": 50,
+            "newPrice": 45,
+            "discount": 32,
+            "rating": 2.2,
+            "isInStock": true
+        },
+        {
+            "id": "7",
+            "name": "Hazelnut caramal",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQgZ-c59MEZEu56IoPY5Wa7vXNw4LUaVIELw&usqp=CAU",
+            "category": "comics",
+            "oldPrice": 120,
+            "newPrice": 100,
+            "discount": 10,
+            "rating": 3.6,
+            "isInStock": true
+        },
+        {
+            "id": "2",
+            "name": "Pure Mango pulp",
+            "image": "https://bakewithshivesh.com/wp-content/uploads/2022/05/IMG_9512-scaled.jpg",
+            "category": "business",
+            "oldPrice": 150,
+            "newPrice": 120,
+            "discount": 33,
+            "rating": 4.5,
+            "isInStock": true
+        }
+       
+    ]
+}
