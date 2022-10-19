@@ -1,10 +1,10 @@
 ## E-com app for an ice cream shop
 
-Problem Statement: An imaginary ice crem shop wants to take its buisness online, Build a website so that customers can order their products online and get it delivered  at required address.
+Problem Statement: An imaginary ice crem shop wants to take its buisness online. Build a website so that customers can order their products online and get it delivered at required address.
 
 ## Features (developed so far)
 
-- [x] A landing page with all their products didplayed.
+- [x] A landing page with all their products displayed.
 - [x] A cart for ordered products.
 - [ ] Login page.
 - [ ] Billing page.
