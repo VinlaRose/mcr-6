@@ -4,7 +4,7 @@ Problem Statement: An imaginary ice crem shop wants to take its buisness online,
 
 ## Features (developed so far)
 
- Markup : - [x] A landing page with all their products didplayed.
+- [x] A landing page with all their products didplayed.
           - [x] A cart for ordered products.
           - [ ] Login page.
           - [ ] Billing page.
