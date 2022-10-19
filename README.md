@@ -5,9 +5,9 @@ Problem Statement: An imaginary ice crem shop wants to take its buisness online,
 ## Features (developed so far)
 
 - [x] A landing page with all their products didplayed.
-          - [x] A cart for ordered products.
-          - [ ] Login page.
-          - [ ] Billing page.
+- [x] A cart for ordered products.
+- [ ] Login page.
+- [ ] Billing page.
 
 
 (The site is incomplete, more features will be added)
