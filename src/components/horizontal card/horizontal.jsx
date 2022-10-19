@@ -27,7 +27,7 @@ export const HorizontalCard = () => {
                </div>
                <div class="cta-btn">
                    <button class="button hori-btn btn-outline-primary btn-               icon d-flex align-center justify-center gap cursor btn-margin">
-                   Move to ❤️</button>
+                   Move to favourite</button>
                 </div>
           </div>
      </div>
