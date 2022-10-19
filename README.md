@@ -3,8 +3,12 @@
 Problem Statement: An imaginary ice crem shop wants to take its buisness online, Build a website so that customers can order their products online and get it delivered  at required address.
 
 ## Features (developed so far)
-A landing page with all their products didplayed.
-A cart for ordered products.
+
+ Markup : - [x] A landing page with all their products didplayed.
+          - [x] A cart for ordered products.
+          - [ ] Login page.
+          - [ ] Billing page.
+
 
 (The site is incomplete, more features will be added)
 
