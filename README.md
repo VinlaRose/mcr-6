@@ -10,7 +10,7 @@ Make sure your have installed GIT and added GIT to path.
 Go to the project directory
 
 ```bash
-  cd react-ecom-app
+  cd Ecom-app-React
 ```
 
 Install dependencies
