@@ -1,6 +1,6 @@
 ## E-com app for an ice cream shop
 
-Problem Statement: An imaginary ice crem shop wantsto take its buisness online, Build a website so that customers can order their products online and deliver it at required address.
+Problem Statement: An imaginary ice crem shop wants to take its buisness online, Build a website so that customers can order their products online and get it delivered  at required address.
 
 ## Features (developed so far)
 A landing page with all their products didplayed.
@@ -8,6 +8,9 @@ A cart for ordered products.
 
 (The site is incomplete, more features will be added)
 
+## Visit the site
+
+[The Ice Cream shop](https://vinlasicecreamshop.netlify.app/)
 
 ## Run Locally
 
