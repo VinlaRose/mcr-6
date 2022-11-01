@@ -1,6 +1,33 @@
 import "./product.css";
+import { useCart } from "../../context/cart-context";
+import { getProductById } from "../../utility/findProductInCart";
+import { useNavigate } from "react-router-dom";
 export const ProductCard = ({product}) => {
-    const {id, name, image,newPrice, oldPrice, discount, rating} = product;
+
+     const {id, name, image,newPrice, oldPrice, discount, rating} = product;
+     
+     const {cart, cartDispatch} = useCart();
+
+     const isProductInCart = getProductById(cart, id);
+
+     
+     const handleAddToCartClick = () => {
+          cartDispatch({
+              type: "ADD_TO_CART",
+              payload: product
+          })
+          // navigate("/cart");
+      }
+
+     const navigate = useNavigate();
+     
+     const handleGoToCart = () => {
+          navigate("/cart");
+     }
+
+
+
+    
     return(
         <div class="card card-vertical d-flex direction-column relative shadow">
      <div class="card-image-container">
@@ -17,9 +44,9 @@ export const ProductCard = ({product}) => {
                </p>
           </div>
           <div class="cta-btn">
-               <button class="button btn-primary btn-icon cart-btn d-flex                          align-center justify-center gap cursor btn-margin">
-               {/* <img src="/assets/cart-white.png" alt="cart"/>  */}
-                 Add To Cart
+               <button class="button btn-primary btn-icon cart-btn d-flex align-center justify-center gap cursor btn-margin" onClick={isProductInCart ? handleGoToCart : handleAddToCartClick }>
+               {isProductInCart ? "Go to Cart" : "Add to Cart"}
+               
                </button>
           </div>
      </div>
