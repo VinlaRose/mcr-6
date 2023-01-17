@@ -21,6 +21,9 @@ export const NavBar = () =>{
             <li class="list-item-inline">
                 <Link to="/cart" class="link cursor">Cart</Link>
             </li>
+            <li class="list-item-inline">
+                <Link to="/login" class="link cursor">Signup</Link>
+            </li>
             {/* <li class="list-item-inline">
                 <Link to="#" class="link cursor">Contact</Link>
             </li> */}
