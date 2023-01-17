@@ -1,4 +1,5 @@
 import { NavBar } from "../../components/navigation/nav";
+import { Sidenav } from "../../components/side-nav/sidenav";
 import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import { ProductCard } from "../../components/product card/product";
@@ -28,12 +29,20 @@ export const Home = () => {
         <Fragment>
             <NavBar/>
             
-            <main className="main d-flex gap wrap">
+            <main>
+            <div className='rowC'>
+            <Sidenav/>
+            <div className="main d-flex gap wrap">
             {
+                
                 products.map(product => <ProductCard key={product.id} product={product}/>)
 
             }
+            </div>
+            </div>
             </main>
+
+            
 
         </Fragment>
         
