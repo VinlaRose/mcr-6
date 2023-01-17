@@ -6,11 +6,17 @@ Problem Statement: An imaginary ice crem shop wants to take its buisness online.
 
 - [x] A landing page with all their products displayed.
 - [x] A cart for ordered products.
+- [ ] Categories.
+- [ ] Filtering products.
+- [ ] Search bar.
 - [ ] Login page.
 - [ ] Billing page.
+- [ ] About/contact
+- [ ] Home Page.
+- [ ] Floating Notifications bar.
 
 
-(The site is incomplete, more features will be added)
+
 
 ## Visit the site
 
