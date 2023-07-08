@@ -4,7 +4,7 @@ import { getProductById } from "../../utility/findProductInCart";
 import { useNavigate } from "react-router-dom";
 export const ProductCard = ({product}) => {
 
-     const {id, name, image,newPrice, oldPrice, discount, rating} = product;
+     const {id, name, image,newPrice, oldPrice} = product;
      
      const {cart, cartDispatch} = useCart();
 
