@@ -1,3 +1,10 @@
+.restaurant-page-wrapper{
+  width: 900px;
+  margin: auto;
+}
+.menu-items{
+  margin-left: 0;
+}
 .review {
     width: 600px;
     border: 1px solid #ccc;

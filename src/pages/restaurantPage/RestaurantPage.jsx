@@ -71,20 +71,21 @@ export const RestaurantPage = () => {
     return(
         <div className="restaurant-page-wrapper">
             <div className="top">
-                <div className="top-left">
-                <h1>{name}</h1>
-            <p className="menu-items">
+            <h1>{name}</h1>
+                <div className="top-left" style={{color:"grey"}}>
+                
+            <div >
                 {menu.map(item => (
                     <span >{item.name},</span>
                 ))}
-            </p>
+            </div>
             <p>Address: {address}</p>
             <p>Phone: {phone}</p>
             <p>Average Rating: {averageRating}</p>
                 </div>
-                <div className="top-right">
+                <span className="top-right">
                     <button className="add-review" onClick={handleAddReview}>Add Review</button>
-                </div>
+                </span>
            
 
             </div>
