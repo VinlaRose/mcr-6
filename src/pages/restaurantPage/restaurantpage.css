@@ -96,7 +96,7 @@
   }
   
   button[type="submit"] {
-    background-color: #4caf50;
+    background-color: red;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -105,7 +105,7 @@
   }
   
   button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: red;
   }
   .review-form {
     position: fixed;
