@@ -1,23 +1,22 @@
 import { createContext, useContext, useReducer } from "react";
-import { cartReducer } from "../reducer/cart-reducer";
+import { reducer } from "../reducer/cart-reducer";
 
 const initialValue = {
-    cart: [],
+    cuisineData : [],
+    restaurantData: [],
+    showData: []
 }
 
-const CartContext = createContext(initialValue);
+export const DataContext = createContext(initialValue);
 
-const CartProvider = ({children}) => {
+export const DataProvider = ({children}) => {
 
-    const [{ cart }, cartDispatch] = useReducer(cartReducer, initialValue);
+    const [state, dispatch] = useReducer(reducer, initialValue);
 
     return (
-        <CartContext.Provider value={{ cart, cartDispatch }}>
+        <DataContext.Provider value={{ state, dispatch }}>
             {children}
-        </CartContext.Provider>
+        </DataContext.Provider>
     )   
 }
 
-const useCart = () => useContext(CartContext);
-
-export { useCart, CartProvider }

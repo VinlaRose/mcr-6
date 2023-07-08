@@ -1,2 +1,19 @@
-.rowC{display:flex;
-     flex-direction:row;}
+
+.beginning{
+     display: flex;
+     flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuisines{
+     display: flex;
+    margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuisineButton{
+     margin: 10px;
+     cursor: pointer;
+}
