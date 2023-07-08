@@ -49,13 +49,23 @@ console.log(state)
                     state?.showData.map(item => (
                         <div key={item.id} className="each-restaurant">
                             <h1 onClick={() => goToPage(item.id)}>{item.name}</h1>
+                            <div className="menu-items">
                             {
                                 item.menu.map(item => (
                                     <div key={item.name} className="each-menu">
-                                        <p >{item.name}</p>
+                                        
+                                        <div className="food-item">
+      <img src={item.imgSrc} alt="Food" className="food-image" />
+      <div className="food-name">{item.name}</div>
+      <div className="food-price">${item.price} for {item.qty}</div>
+    </div>
+                                        
                                     </div>
                                 ))
                             }
+
+                            </div>
+                          
                         </div>
                         
                     ))

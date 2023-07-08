@@ -16,4 +16,58 @@
 .cuisineButton{
      margin: 10px;
      cursor: pointer;
+     background-color: red;
+     color: white;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+     font-size: large;
+     font-weight: 600;
 }
+
+.restaurantsList{
+     margin-top: 30px;
+     
+
+     
+}
+
+.menu-items{
+     display: flex;
+    margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.each-restaurant h1{
+     margin-left: 60px;
+}
+.food-item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     margin: 20px;
+   }
+   
+   .food-image {
+     width: 240px;
+     height: 240px;
+     object-fit: cover;
+     border-radius: 10px;
+     margin-bottom: 10px;
+   }
+   
+   .food-name {
+     font-size: 1.2rem;
+     margin-bottom: 5px;
+   }
+   
+   .food-price {
+     font-weight: bold;
+     font-size: 1.2rem;
+     color: #333;
+   }
+.menu-items{
+     display: flex;
+}   
