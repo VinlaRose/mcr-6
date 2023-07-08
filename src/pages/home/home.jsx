@@ -3,8 +3,13 @@ import { useContext, useEffect } from "react";
 import "./home.css";
 import { DataContext } from "../../context/cart-context";
 import { cuisineData, restaurantsData } from "../../data";
+import { useNavigate } from "react-router-dom";
+
+
+
 export const Home = () => {
 const {state, dispatch} = useContext(DataContext);
+const navigate = useNavigate();
 useEffect(() => {
 dispatch({type : "FETCH_DATA", payload: {cuisines : cuisineData, restaurants: restaurantsData}})
 },[]);
@@ -14,6 +19,11 @@ const cuisineHandler = (id) => {
     const filteredData = state.restaurantData.filter(item => item.cuisine_id === id);
   
     dispatch({type: "SHOW_DATA", payload: filteredData})
+}
+
+const goToPage = (id) => {
+console.log(id);
+navigate(`/${id}`)
 }
     
 console.log(state)
@@ -38,7 +48,7 @@ console.log(state)
                 {
                     state?.showData.map(item => (
                         <div key={item.id} className="each-restaurant">
-                            <h1>{item.name}</h1>
+                            <h1 onClick={() => goToPage(item.id)}>{item.name}</h1>
                             {
                                 item.menu.map(item => (
                                     <div key={item.name} className="each-menu">

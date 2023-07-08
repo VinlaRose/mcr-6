@@ -14,7 +14,11 @@ export const reducer = (state,action) => {
                 
                
             }
+        case "ADD_REVIEW": 
+         return{
+            ...state,
             
+         }    
         default: 
             return state;
     }
