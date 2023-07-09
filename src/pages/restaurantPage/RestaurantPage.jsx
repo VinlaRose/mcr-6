@@ -1,13 +1,17 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import { DataContext } from "../../context/cart-context";
 import "./restaurantpage.css"
 
 export const RestaurantPage = () => {
     const {id} = useParams();
-    const {state} = useContext(DataContext);
+    const {state,dispatch} = useContext(DataContext);
     const [showForm, setShowForm] = useState(false);
+
+    
     const requiredRestaurant = state.restaurantData.find(item => item.id === Number(id));
+
+ 
     
     const [review, setReview] = useState({
       revName: "",
@@ -18,8 +22,7 @@ export const RestaurantPage = () => {
   
     const handleAddReview = () => {
       setShowForm(true);
-      console.log(requiredRestaurant);
-      console.log(state)
+      
     };
   
     const handleCloseReview = () => {
@@ -46,17 +49,23 @@ export const RestaurantPage = () => {
       e.preventDefault();
       
       console.log(review);
-      const updatedData = state.restaurantData.map(item => {
+     
+      const updatedData = state.restaurantDataCopy.map(item => {
         if(item.id === requiredRestaurant.id){
             return {
                 ...item,
-                ratings: item.ratings.push(review)
-            }
+                ratings: item.ratings.push(review),
+                averageRating: item.ratings.reduce(
+                    (acc, curr) => acc.rating + curr.rating,
+                    0
+                  )
+                }
         }else{
-            return item
+            return item;
         }
       });
-      console.log(updatedData)
+  
+    //   dispatch({type: "ADD_REVIEW", payload: updatedData})
      
       setReview({
         revName: "",
@@ -65,6 +74,7 @@ export const RestaurantPage = () => {
         pp: "https://img.lovepik.com/element/40127/3339.png_860.png", 
       });
       setShowForm(false);
+    
     };
    
     const {name,menu, address, phone, averageRating, ratings} = requiredRestaurant

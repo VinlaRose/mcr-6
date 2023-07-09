@@ -4,7 +4,8 @@ export const reducer = (state,action) => {
             return{
                 ...state,
                 cuisineData: action.payload.cuisines,
-                restaurantData: action.payload.restaurants
+                restaurantData: action.payload.restaurants,
+                restaurantDataCopy: action.payload.restaurants,
                
             }
         case "SHOW_DATA":
@@ -17,7 +18,7 @@ export const reducer = (state,action) => {
         case "ADD_REVIEW": 
          return{
             ...state,
-            
+            restaurantData: action.payload
          }    
         default: 
             return state;

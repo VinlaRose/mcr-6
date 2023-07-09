@@ -4,6 +4,7 @@ import { reducer } from "../reducer/cart-reducer";
 const initialValue = {
     cuisineData : [],
     restaurantData: [],
+    restaurantDataCopy: [],
     showData: []
 }
 
